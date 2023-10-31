@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS users_account
+DROP TABLE IF EXISTS users_account;
 CREATE TABLE users_account (
     id serial primary key NOT NULL,
     username varchar(30)  NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE users_account (
     create_date timestamp default current_timestamp --- creacion del registro
 );
 
-DROP TABLE IF EXISTS status_message
+DROP TABLE IF EXISTS status_message;
 CREATE TABLE status_message (
     id serial primary key NOT NULL,
     type varchar(20) NOT NULL,
